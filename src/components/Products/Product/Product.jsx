@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardActions, CardContent, CardMedia, IconButton, Typography } from "@material-ui/core/";
 import { AddShoppingCart } from '@material-ui/icons';
-import useStyles from './styles';
+import useStyles from '../../../styles/stylesProduct';
 
 const Product = ({ product }) => {
     const styles = useStyles();
@@ -19,7 +19,7 @@ const Product = ({ product }) => {
                 </div>
                 <Typography variant="body2" color="textSecondary">{product.description}</Typography>
             </CardContent>
-            <CardActions disableSpacing className={styles.CardActions}>
+            <CardActions disableSpacing className={styles.cardActions}>
                 <IconButton aria-label="Add to Card">
                     <AddShoppingCart />
                 </IconButton>
